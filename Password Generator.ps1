@@ -4,7 +4,7 @@ $length = 24
 # Define the characters to use in the random string
 $characters = 'abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789!@#$%^&*()-_=+,./;>?:`~'
 
-# Initialize the random string to generate the password
+# Create five random strings to generate potential passwords
 $randomString1 = -join ((0..($length-1)) | ForEach-Object { $characters[(Get-Random -Minimum 0 -Maximum $characters.Length)] })
 $randomString2 = -join ((0..($length-1)) | ForEach-Object { $characters[(Get-Random -Minimum 0 -Maximum $characters.Length)] })
 $randomString3 = -join ((0..($length-1)) | ForEach-Object { $characters[(Get-Random -Minimum 0 -Maximum $characters.Length)] })
